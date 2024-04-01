@@ -1,0 +1,74 @@
+Signup endpoint: http://localhost:3000/register
+req: POST
+{
+  "email": "testuser@example.com",
+  "password": "password"
+}
+
+
+Login endpoint: http://localhost:3000/login
+req: POST
+{
+  "email": "testuser@example.com",
+  "password": "password"
+}
+
+upload endpoint: http://localhost:3000/upload
+req:POST
+form-data:
+title           Song Test
+artist          Artist Test
+genre           Genre Test
+country         Country Test
+musicFile       File
+
+preferences endpoint: http://localhost:3000/preferences
+req POST
+{
+  "title": "Pop",
+  "artist": "Artist1",
+  "genre": "Pop",
+  "country": "USA",
+  "dataThreshold": 100
+}
+ req: GET
+ Authorization: Bearer your-jwt-token
+
+recommendation endpoint: http://localhost:3000/recommendations
+req POST
+{
+  "title": "Song Test",
+  "artist": "Artist Test",
+  "genre": "Genre Test",
+  "country": "Country Test",
+  "dataThreshold": 100
+}
+ req: GET
+ Authorization: Bearer your-jwt-token
+
+ ### Get All Music in Recommendations
+GET http://localhost:3000/recommendations/music
+
+### Get a Particular Music in Recommendations
+GET http://localhost:3000/recommendations/music/1
+
+### Get All Music in the Music Table
+GET http://localhost:3000/music
+
+### Get a Particular Music in the Music Table
+GET http://localhost:3000/music/1
+
+
+Tests for search functionality:
+
+### Search for Music by Title
+GET http://localhost:3000/search?title=yourTitle
+
+### Search for Music by Artist
+GET http://localhost:3000/search?artist=yourArtist
+
+### Search for Music by Genre
+GET http://localhost:3000/search?genre=yourGenre
+
+### Search for Music by Title, Artist, and Genre
+GET http://localhost:3000/search?title=yourTitle&artist=yourArtist&genre=yourGenre
