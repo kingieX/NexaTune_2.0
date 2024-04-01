@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* color palletes */
+.primary {
+  color: #264eca;
+}
+
+.inputSearchBox {
+  background-color: #373535;
+  color: white;
+  width: 50%;
+  height: 35px;
+  padding: 10px;
+  margin: 15px;
+  outline: none;
+}
+
+.input {
+  outline: none;
+  width: 35vw;
+  height: 7vh;
+}
+
+.searchBox {
+  background-color: #5e5c5c;
+  padding: 2px 10px;
+  margin-left: -86px;
+}
+
+.searchBox:hover {
+  background-color: #444141;
+}
+
+.bgColor {
+  background-color: #242323;
+}
+
+.headerColor {
+  background-color: #242323;
+}
+
+.secondaryText {
+  color: #888888;
+}
+
+.timeStamp {
+  background-color: #262525;
+}
+
+.image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.88);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 15vh 85vh;
+}
+.main {
+  background-color:rgba(0, 0, 0, 0.75);
+  /* height: 100vh; */
+  /* width: 100vw; */
+}
+
+.home {
+  background-color:rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  height: 100%;
+  width: 45%;
+}
+
+.box2 {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.80);
+  height: 100%;
+  width: 45%;
+}
+
+.box3 {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.80);
+  height: 65vh;
+  width: 45%;
+}
+
+
+.logo {
+  width: 85px;
+  height: 40px;
+}
+
+.nav{
+  background-color: #161616;
+  color: white;
+}
+
+.icon {
+  background-color: #5e5c5c;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 4px;
+}
+
+.icon:hover, .icon:active {
+  color: #264eca;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  right: 0;
+  top: 100%;
+  margin-top: -3.6rem;
+  width: 20%;
+  height: 310px;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  background-color: #000000;
+  min-width: 300px;
+  min-height: 310px;
+}
+
+.label {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.music-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  /* height: 100%; */
+  padding: 0.5rem;
+}
+
+.music-box {
+  width: 20vw;
+  /* height: 35vh; */
+  padding: 10px;
+  /* background-color: #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.image-box {
+  width: 18vw;
+  height: 150px;
+  background-color: #264eca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space {
+  margin-bottom: 100px;
+}
+
+/*--- music player styling ---*/
+
+.music-Container{
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.musicTimerDiv{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 600;
+}
+
+.progressBar{
+  width: 80%;
+  margin-bottom: 16px;
+  height: 10px;
+  border-radius: 5px;
+  outline: none;
+  filter: hue-rotate(20deg);
+  margin-top: -17px;
+}
+
+.controls {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 160px;
+  gap: 5px;
+}
+
+.speaker {
+  display: flex;
+  gap: 2px;
+  filter: hue-rotate(20deg);
+}
